@@ -1,0 +1,4 @@
+Node vs Browser
+No window object / process.global will be global namespace
+No DOM / no document object
+Hardware Access (cpus, gps, bluetooth, etc)

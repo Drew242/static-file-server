@@ -1,0 +1,7 @@
+Module System
+other files
+reference by file path
+libraries (3rd party)
+reference by name ‘npm install MODULENAME - - save’
+built-in (core) module
+reference by name 
