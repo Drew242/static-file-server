@@ -1,0 +1,8 @@
+NODE JS
+
+JavaScript that runs on the server - other than the browser
+
+built on the v8 JS engine
+really focused on performance
+great at garbage collection
+Object Property Lookups 

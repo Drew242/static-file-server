@@ -1,7 +1,8 @@
 // Requires \\
-var express = require('express');
+var express    = require('express');
 var bodyParser = require('body-parser');
-var logger = require('morgan');
+var logger     = require('morgan');
+var fs         = require('fs');
 // Create Express App Object \\
 var app = express();
 
@@ -11,9 +12,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 
+var fileContents = fs.readFileSync('./app/data.txt');
+
 // Routes \\
 app.get('/', function(req, res){
-  res.send('Hello')
+  res.header('Content-Type', 'text/html');
+  res.send(`<p>${fileContents}<p>`);
 });
 
 // Creating Server and Listening for Connections \\
